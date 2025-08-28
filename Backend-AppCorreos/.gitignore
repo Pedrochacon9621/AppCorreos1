@@ -1,0 +1,35 @@
+# Node modules
+/node_modules/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Dependency lock files (opcional, si no quieres subirlos)
+# package-lock.json
+# yarn.lock
+
+# Build artifacts (si usas algún bundler o transpiler)
+/dist/
+/build/
+
+# Coverage reports (si usas testing)
+/coverage/
+
+# PM2 logs and dumps
+.pm2/
+

@@ -1,0 +1,70 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+
+# Environment variables
+.env
+
+# Uploaded files
+/uploads/
+
+# Logs
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# ESLint cache
+.eslintcache
+
+# Optional: exclude credentials file if it's sensitive
+credenciales.txt
+
+# Coverage reports (si usas testing)
+/coverage/
+
+# Local config files
+*.local.*
+
+# Vite cache
+/.vite/
+
+# Optional: ignore lock files if no version pinning
+# package-lock.json
+# yarn.lock
+
