@@ -1,9 +1,9 @@
 export default function PoliticaPage() {
 
     return(
-            <div style={{maxWidth: "800px", margin: "auto", fontFamily: "Arial, sans-serif", lineHeight: "1.6", color: "#333"}}>
+            <div style={{maxWidth: "800px", margin: "auto", marginTop:"100px", fontFamily: "Arial, sans-serif", lineHeight: "1.6", color: "#333"}}>
                 <h2>🛡️ Política de Privacidad — Aplicación de Envío de Correos (Demo)</h2>
-                <p>Esta aplicación ha sido desarrollada con fines exclusivamente demostrativos como parte del portafolio profesional de Pedro. No está destinada al uso público general ni al procesamiento real de datos personales.</p>
+                <p>Esta versión de la aplicación esta pensada para uso exclusivamente demostrativo como parte del portafolio profesional. No está destinada al uso público general ni al procesamiento real de datos personales.</p>
 
                 <h3>🎯 1. Finalidad de la aplicación</h3>
                 <p>La app permite simular el envío de correos electrónicos, incluyendo la selección de archivos locales, ingreso de direcciones de correo, asunto y mensaje. Su único propósito es mostrar habilidades técnicas en desarrollo web.</p>
@@ -22,7 +22,7 @@ export default function PoliticaPage() {
                 <p>Esta aplicación está destinada únicamente a ser revisada por reclutadores o interesados en el perfil profesional del desarrollador. No debe utilizarse para fines reales de comunicación o envío de información.</p>
 
                 <h3>📬 5. Contacto</h3>
-                <p>Para cualquier duda relacionada con esta aplicación o el portafolio, puedes contactar a Pedro a través de <a href="mailto:tu-correo@example.com">tu-correo@example.com</a>.</p>
+                <p>Para cualquier duda relacionada con esta aplicación o el portafolio, puedes contactar a Pedro a través de <a href="mailto:pedrochacon9621@gmail.com">pedrochacon9621@gmail.com</a>.</p>
             </div>
     )
 
