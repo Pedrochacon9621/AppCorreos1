@@ -1,7 +1,7 @@
-export function Politica() {
+export default function PoliticaPage() {
 
     return(
-            <div style="max-width: 800px; margin: auto; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+            <div style={{maxWidth: "800px", margin: "auto", fontFamily: "Arial, sans-serif", lineHeight: "1.6", color: "#333"}}>
                 <h2>🛡️ Política de Privacidad — Aplicación de Envío de Correos (Demo)</h2>
                 <p>Esta aplicación ha sido desarrollada con fines exclusivamente demostrativos como parte del portafolio profesional de Pedro. No está destinada al uso público general ni al procesamiento real de datos personales.</p>
 
