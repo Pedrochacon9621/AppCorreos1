@@ -1,10 +1,10 @@
 const nodemailer = require('nodemailer');
 const multer = require('multer');
 const { mostrarTexto } = require('./leerUsuario');
-
+/*
 const datoUsuario = mostrarTexto();
 const datoUsuarioJson = JSON.parse(datoUsuario);
-
+*/
 const upload = multer({ dest: 'uploads/' });
 /*
 const user = datoUsuarioJson.correo;
