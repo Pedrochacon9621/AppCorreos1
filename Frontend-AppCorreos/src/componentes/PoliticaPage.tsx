@@ -19,7 +19,7 @@ export default function PoliticaPage() {
                 <p>Aunque esta app no realiza almacenamiento ni transmisión de datos, se recomienda no ingresar información sensible o confidencial durante su uso.</p>
 
                 <h3>🚫 4. Uso limitado</h3>
-                <p>Esta aplicación está destinada únicamente a ser revisada por reclutadores o interesados en el perfil profesional del desarrollador. No debe utilizarse para fines reales de comunicación o envío de información.</p>
+                <p>Esta versión de la aplicación está destinada únicamente a ser revisada por reclutadores o interesados en el perfil profesional del desarrollador. No debe utilizarse para fines reales de comunicación o envío de información.</p>
 
                 <h3>📬 5. Contacto</h3>
                 <p>Para cualquier duda relacionada con esta aplicación o el portafolio, puedes contactar a Pedro a través de <a href="mailto:pedrochacon9621@gmail.com">pedrochacon9621@gmail.com</a>.</p>
