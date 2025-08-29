@@ -3,6 +3,8 @@ require('dotenv').config(); // PARA VARIABLES DE ENTORNO EN VERSION WEB
 const router = require('./routers/rutas');
 const cors = require('cors');
 const path = require('path');
+const PORT = process.env.PORT || 3000;
+
 /*const pathUploads = path.resolve(__dirname, 'uploads');
 const {limpiarUploads} = require("./funcionesJs/leerUsuario")
 */
@@ -43,9 +45,9 @@ app.get('/',(req, res)=>{
 
   app.use(router)
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     
-    console.log("Servidor escuchando en puerto 3000");
+    console.log(`servidor funcionando en puerto ${PORT}`);
     
     
 })
