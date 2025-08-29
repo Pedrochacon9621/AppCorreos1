@@ -1,16 +1,26 @@
-import BusquedaArchivo from "./componentes/BusquedaArchivo"
+import BusquedaArchivo from "./componentes/BusquedaArchivo";
+import Politica from "./componentes/Politica";
 import "./css/generales.css"
 import { useEffect } from "react";
+import { Link, Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 function App() {
   
 useEffect(() => {
-    alert("¡Bienvenido a la aplicación de correos!");
+    alert("Esta aplicación es una versión de prueba con fines demostrativos. No realiza almacenamiento ni procesamiento de datos personales. Toda la información ingresada —como correos, archivos o mensajes— se gestiona únicamente en el navegador del usuario y no se transmite a servidores externos. No está diseñada para uso comercial ni para el envío real de correos electrónicos. Se recomienda no ingresar información sensible durante su uso. Para consultar la política completa, haz clic ");
   }, []);
   
 
   return (
     <>
-      <BusquedaArchivo/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<BusquedaArchivo/>}/>
+          <Route path="/politica" element={<Politica/>}/>
+        </Routes>
+      </Router>
+
+
+      
     </>
   )
 }
