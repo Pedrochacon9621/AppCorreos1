@@ -1,15 +1,22 @@
 const nodemailer = require('nodemailer');
 const multer = require('multer');
-const { mostrarTexto } = require('./leerUsuario');
+//LOGICA PARA VERSION DE ESCRITORIO:-------------------------------------------------------------
+/*const { mostrarTexto } = require('./leerUsuario');*/
 /*
 const datoUsuario = mostrarTexto();
 const datoUsuarioJson = JSON.parse(datoUsuario);
 */
+//LOGICA PARA VERSION DE ESCRITORIO:-------------------------------------------------------------
+
 const upload = multer({ dest: 'uploads/' });
+
+//LOGICA PARA VERSION DE ESCRITORIO:-------------------------------------------------------------
 /*
 const user = datoUsuarioJson.correo;
 const password = datoUsuarioJson.contraseña;
 */
+//LOGICA PARA VERSION DE ESCRITORIO:-------------------------------------------------------------
+
 
 //user y pass para version web:
 const user = process.env.correo;
