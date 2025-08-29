@@ -17,7 +17,8 @@ const app = express();
     
 const corsOptions = {
 
-    origin: 'http://localhost:5173', // Reemplaza con la URL de tu frontend
+    //origin: 'http://localhost:5173', // Reemplaza con la URL de tu frontend
+    origin: 'https://frontend-appcorreos1.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
     credentials: true // Si necesitas enviar cookies o autenticación
 
@@ -32,7 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get('/',(req, res)=>{
-    res.send("HELLO WORLD");
+    res.send("api funcionando");
     
 })
 
