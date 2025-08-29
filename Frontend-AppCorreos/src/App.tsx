@@ -14,14 +14,10 @@ useEffect(() => {
     <>
       <Router>
         <Routes>
-          <link rel="stylesheet" href="/politica">Consulta Política de Privacidad</link>
           <Route path="/" element={<BusquedaArchivo/>}/>
           <Route path="/politica" element={<PoliticaPage/>}/>
         </Routes>
       </Router>
-
-
-      
     </>
   )
 }

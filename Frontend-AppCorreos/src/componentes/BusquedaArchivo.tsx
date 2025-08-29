@@ -1,5 +1,6 @@
 import { ChangeEvent, useState, ClipboardEvent, FormEvent } from 'react';
 import { enviarFileBackend } from '../js/fetch';
+import { Link } from "react-router-dom";
 
 export default function BusquedaArchivo() {
       
@@ -79,7 +80,10 @@ export default function BusquedaArchivo() {
 
 
         return (
-          <div >
+          <div  style={{marginTop:"30px"}}>
+            <nav>
+              <Link to="/politica">Click para consultar Política de Privacidad</Link>
+            </nav>
             <form onSubmit={(e)=>crearFormData(e)} encType="multipart/form-data">
              
               <input id="btnArchivo" type="file" name='files' multiple onChange={handleFilesChange} />
