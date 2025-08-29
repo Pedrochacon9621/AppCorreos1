@@ -2,7 +2,7 @@ import BusquedaArchivo from "./componentes/BusquedaArchivo";
 import Politica from "./componentes/Politica";
 import "./css/generales.css"
 import { useEffect } from "react";
-import { Link, Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 function App() {
   
 useEffect(() => {
