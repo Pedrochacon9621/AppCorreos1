@@ -84,7 +84,8 @@ export default function BusquedaArchivo() {
             <nav>
               <Link to="/politica">Click para consultar Política de Privacidad</Link>
             </nav>
-            <p>⚠️ Importante: Algunos correos pueden llegar a la carpeta de spam o promociones. Para asegurarte de recibirlos correctamente, marca el remitente como seguro en tu bandeja de entrada.</p>
+            <p>⚠️ Importante: Algunos correos pueden llegar a la carpeta de spam o promociones. 
+              Para asegurarte de recibirlos correctamente, marca el remitente como seguro en tu bandeja de entrada.</p>
             <form onSubmit={(e)=>crearFormData(e)} encType="multipart/form-data">
              
               <input id="btnArchivo" type="file" name='files' multiple onChange={handleFilesChange} />
