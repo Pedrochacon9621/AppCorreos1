@@ -1,35 +1,15 @@
 const nodemailer = require('nodemailer');
+const sgTransport = require('nodemailer-sendgrid-transport');
 const multer = require('multer');
-//LOGICA PARA VERSION DE ESCRITORIO:-------------------------------------------------------------
-/*const { mostrarTexto } = require('./leerUsuario');*/
-/*
-const datoUsuario = mostrarTexto();
-const datoUsuarioJson = JSON.parse(datoUsuario);
-*/
-//LOGICA PARA VERSION DE ESCRITORIO:-------------------------------------------------------------
 
 const upload = multer({ dest: 'uploads/' });
 
-//LOGICA PARA VERSION DE ESCRITORIO:-------------------------------------------------------------
-/*
-const user = datoUsuarioJson.correo;
-const password = datoUsuarioJson.contraseña;
-*/
-//LOGICA PARA VERSION DE ESCRITORIO:-------------------------------------------------------------
-
-
-//user y pass para version web:
-const user = process.env.correo;
-const password = process.env.correoPass;
-
-
 const correosConfig = (req, res) => {
-  // Parsear los JSON strings de vuelta a arreglos
   const correos = JSON.parse(req.body.correo);
   const asuntos = JSON.parse(req.body.asunto);
   const mensajes = JSON.parse(req.body.mensaje);
-
   const files = req.files;
+
   console.log(files);
 
   const attachments = files.map(file => ({
@@ -37,44 +17,20 @@ const correosConfig = (req, res) => {
     path: file.path
   }));
 
-
-  /* --CON MICROSOFT--
-  let transporter = nodemailer.createTransport({
-    host: 'smtp.office365.com',
-    port: 587,
-    secure: false, // true para 465, false para otros puertos
+  const transporter = nodemailer.createTransport(sgTransport({
     auth: {
-      user: user, // Reemplaza con tu correo
-      pass: password // Reemplaza con tu contraseña de aplicación
+      api_key: process.env.SENDGRID_API_KEY
     }
-  });*/
-
-  let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    secure: false,
-    auth: {
-      user: user, // Reemplaza con tu correo
-      pass: password // Reemplaza con tu contraseña
-    }
-  });
+  }));
 
   correos.forEach((correo, index) => {
     const mailOptions = {
-      from: user,
+      from: process.env.correo, // debe coincidir con el remitente verificado
       to: correo,
       subject: asuntos[index],
       text: mensajes[index],
-      attachments: attachments[index]
+      attachments: [attachments[index]] // que sea un array
     };
-    /* --CON MICROSOFT--
-    correos.forEach((correo, index) => {
-    const mailOptions = {
-      from: 'ch_pedro96@hotmail.com',
-      to: correo,
-      subject: asuntos[index],
-      text: mensajes[index],
-      attachments: attachments[index]
-    };*/
 
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
