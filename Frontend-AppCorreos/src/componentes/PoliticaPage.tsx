@@ -12,7 +12,7 @@ export default function PoliticaPage() {
                 <ul>
                     <li><strong>No se almacenan datos:</strong> La información ingresada (correos, archivos, mensajes) no se guarda en ningún servidor ni base de datos.</li>
                     <li><strong>Procesamiento local:</strong> Todos los datos se manejan únicamente en el navegador del usuario durante la sesión.</li>
-                    <li><strong>Sin terceros:</strong> No se comparten datos con terceros ni se utilizan servicios externos para el envío real de correos.</li>
+                    <li><strong>Uso de terceros:</strong> Para el envío de correos, se utiliza el servicio externo SendGrid, que procesa la información de forma segura y conforme a sus propias políticas de privacidad.</li>
                 </ul>
 
                 <h3>🔐 3. Seguridad</h3>
