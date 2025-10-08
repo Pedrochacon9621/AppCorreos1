@@ -1,7 +1,6 @@
 import BusquedaArchivo from "./componentes/BusquedaArchivo";
 import PoliticaPage from "./componentes/PoliticaPage";
 import "./css/generales.css"
-import { useEffect } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 function App() {
   
