@@ -2,9 +2,6 @@
     background-color: rgb(230, 230, 230);
 }
 
-
-
-
 form{
     border: none;
 }
@@ -30,10 +27,8 @@ td {
 */
     /*background-color: rgb(219, 217, 217);*/
     background-color: white;
-    padding: 4px;
-    
+    padding: 4px;    
 }
-
 
 #btnArchivo{
    background: none;
@@ -46,7 +41,6 @@ td {
     color:rgb(27, 64, 146) ;
    
 }
-
 
 #btnEnviar {
     margin-top: 10px;
@@ -71,4 +65,29 @@ th{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 5px 0;
+}
+
+.enlace1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:rgb(219, 217, 217);
+    background-color: rgb(27, 64, 146);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 15px;
+    
+}
+.text1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: none;
+    margin: 0;
+}
+.content-text1{
+    padding: 15px;
+    border: solid rgb(27, 64, 146);
+    border-radius: 15px;
+    width: fit-content;
+    margin-top: 15px;
+    background-color: rgb(241, 241, 241);
 }
